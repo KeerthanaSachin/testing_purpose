@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JJ Adventures</title>
+    <style>
+      #scene-container {
+        display: none; /* Hide puzzle scene initially */
+        position: relative;
+      }
+      #back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: none; /* Hide back button initially */
+      }
+    </style>
+  </head>
+  <body>
+    <button id="start-button">Start Game</button>
+    <div id="scene-container">
+      <!-- The puzzle scene will be rendered here -->
+      <button id="back-button">Back to Main Scene</button>
+    </div>
+    
+    <!-- Include main.js first -->
+    <script type="module" src="/main.js"></script>
+    <!-- Include puzzle.js second but it won't run until triggered -->
+    <script type="module" src="/puzzle.js"></script>
+  </body>
+</html>
